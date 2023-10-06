@@ -1,0 +1,61 @@
+:root {
+    --pri-cyan: hsl(179, 62%, 43%);
+    --pri-bottomCyan: hsl(179, 62%, 70%);
+    --pri-brightYellow: hsl(71, 73%, 54%);
+    --neu-lightGray: hsl(204, 43%, 93%);
+    --neu-grayishBlue: hsl(218, 22%, 67%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neu-lightGray);
+}
+
+main {
+    width: 95%;
+    height: 80%;
+    border: 1px solid red;
+    border-radius: 0.375rem;
+}
+
+main .topThird {
+    background-color: white;
+    height: 33.33%;
+}
+
+main .middleThird {
+    background-color: var(--pri-cyan);
+    height: 33.33%;
+}
+
+main .bottomThird {
+    background-color: var(--pri-bottomCyan);
+    height: 33.33%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
